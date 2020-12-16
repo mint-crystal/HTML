@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>폼태그실습1</title>
+    </head>
+    <body>
+        <form>
+            <label for="name">고객명 : </label><input type="text" name="name"><br>
+            <br>
+            <label for="tel">전화번호 : </label><input type="tel" name="tel"><br>
+            <br>
+            <label for="email">E-mail : </label><input type="email" name="email"><br>
+            <br>
+            <fieldset>
+                <legend>피자 사이즈</legend>
+                <input type="radio" name="size">Small<br>
+                <input type="radio" name="size">Medium<br>
+                <input type="radio" name="size">Large
+            </fieldset>
+            <fieldset>
+                <legend>토핑 선택</legend>
+                <input type="checkbox" name="topping">베이컨<br>
+                <input type="checkbox" name="topping">치즈<br>
+                <input type="checkbox" name="topping">양파<br>
+                <input type="checkbox" name="topping">버섯<br>
+            </fieldset>
+            <label for="time">희망 배송 시간 : </label><input type="time" name="time"><br>
+            <br>
+            <label for="text">배송시 요청사항 : </label><textarea name="text"></textarea><br>
+            <br>
+            <input type="submit" value="주문하기">
+        </form>
+    </body>
+</html>
