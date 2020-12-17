@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS 테스트</title>
+        <style>
+            p{color:red;}
+        </style>
+        <link href="mycsstest.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- 인라인시트의 우선 순위가 더 높기때문에 css 적용 안 됨 -->
+        <!-- <P style="color:red;">CSS테스트</P> -->
+        <P class="pclass1">CSS테스트</P>
+        <nav>
+            <!-- #은 자기 자신을 의미함 -->
+            <a href="#">링크1</a> | 
+            <a href="http://www.naver.com">링크2</a> |
+            <a href="#" target="_blank">링크3</a>
+        </nav>
+        </header>
+        <section>
+            section영역
+            <div id="d1">블록영역1
+                <pre class="pclass1">블록1 내부 문단영역1</pre>
+                <pre class="pclass1">블록1 내부 문단영역2</pre>
+                <pre class="pclass1">블록1 내부 문단영역3
+                    <pre>문단3 내부 문단영역11</pre>
+                    <pre>문단3 내부 문단영역22</pre>
+                </pre>
+            </div>
+            <div id="d2">블록영역2
+                <h1>블록영역2</h1>
+                <pre>블록2 내부 pre1</pre>
+                <pre>블록2 내부 pre2</pre>
+                <pre>블록2 내부 pre3</pre>
+            </div>
+            <div id="d3">
+                입력1 : <input type="text" name="t1"><br>
+                입력2 : <input type="text" name="t2"><br>
+                <input type="checkbox" name="t3" checked>체크1<br>
+                <input type="checkbox" name="t3">체크2<br>
+                <select>
+                    <option value="1" disabled>1</option>
+                    <option value="2" >2</option>
+                    <option value="3" >3</option>
+                </select>
+            </div>
+            <hr>
+            <div id="d4">
+                <p>일반 구조 1</p>
+                <p>일반 구조 2</p>
+                <p>일반 구조 3</p>
+                <p>일반 구조 4</p>
+                <p>일반 구조 5</p>
+                <pre>일반 구조 6</pre>
+            </div>
+            <hr>
+            <div id="d5">
+                <p>형태 구조 1</p>
+                <p>형태 구조 2</p>
+                <p>형태 구조 3</p>
+                <p>형태 구조 4</p>
+                <p>형태 구조 5</p>
+                <pre>형태 구조 6</pre>
+            </div>
+            <div id='d6'>
+                <p>안녕하세요<br>
+                    반갑습니다
+                </p>
+            </div>
+        </section>
+        <hr>
+        <footer>
+            footer 영역
+        </footer>
+    </body>
+</html>
