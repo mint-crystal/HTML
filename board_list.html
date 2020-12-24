@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KH WEB</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Icon -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+        <!-- My Style Sheet -->
+        <link rel="stylesheet" href="./mystyle.css" type="text/css">
+    </head>
+    <body>
+        <header class="container p-2 text-center">
+            <h1>KH Test Web Site</h1>
+            <p>[NCS]디지털컨버전스 융합 응용 SW 개발자 양성과정</p>
+        </header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item px-2"><a class="nav-link" href="index.html">
+                    <span class="fas fa-home"></span> HOME</a></li>
+                <!-- Dropdown -->
+                <li class="nav-item px-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    INFO</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">회사소개</a>
+                        <a class="dropdown-item" href="#">버전</a>
+                        <a class="dropdown-item" href="#">조직도</a>
+                        <a class="dropdown-item" href="#">오시는길</a>
+                      </div>
+                    </li>
+                <li class="nav-item px-2 dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    BOARD</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">공지사항</a>
+                        <a class="dropdown-item" href="board_list.html">게시판</a>
+                      </div>
+                    </li>
+                <li class="nav-item px-2 dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    SOLUTION</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">JAVA</a>
+                        <a class="dropdown-item" href="#">Oracle</a>
+                        <a class="dropdown-item" href="#">HTML</a>
+                        <a class="dropdown-item" href="#">CSS</a>
+                      </div>
+                    </li>
+                <li class="nav-item px-2 dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    MEMBER</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="member_login.html">로그인</a>
+                        <a class="dropdown-item" href="member_register.html">회원가입</a>
+                        <a class="dropdown-item" href="member_myinfo.html">나의정보</a>
+                        <a class="dropdown-item" href="#">로그아웃</a>
+                      </div>
+                    </li>
+            </ul>
+            </div>
+        </nav>
+        <section class="container p-5">
+            <h3><span class="fas fa-list"></span> &nbsp; 게시판 </h3>
+            <hr>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>번호</th>
+                    <th>글제목</th>
+                    <th>작성자</th>
+                    <th>작성일자</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><a href="board_view.html?num=1">안녕하세요</a></td>
+                    <td>홍길동</td>
+                    <td>2020-12-20</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="board_view.html?num=2">웹 개발 어렵나요??</a></td>
+                    <td>말순이</td>
+                    <td>2020-12-21</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><a href="board_view.html?num=2">재미난 웹개발~!</a></td>
+                    <td>개똥이</td>
+                    <td>2020-12-22</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><a href="board_view.html?num=2">코로나 언제 끝나요??</a></td>
+                    <td>콜콜콜</td>
+                    <td>2020-12-23</td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="pagination pagination-sm justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">◀</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">▶</a></li>
+              </ul>
+              <a type="button" class="btn btn-dark btn-sm float-right" href="board_write.html">글쓰기</a>
+        </section>
+        <footer class="container-fluid bg-secondary p-2 text-white text-center small font-weight-light">
+            <p>상호 : KH정보교육원 / 대표 : 최수정</p>
+        </footer>
+    </body>
+</html>
